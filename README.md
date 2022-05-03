@@ -32,8 +32,8 @@ Currently, there are 3 'modes' you can configure to change the look of Share:
 
 `$wgShareFacebook` - Show "Share to Facebook" option in sidebar?
 
-`$wgShareSidebarImagesOnly` - Enable 'Basic buttons' Mode? (See #2 in the "Configuration" section; conflicts with $wgShareSidebarLinksOnly)
+`$wgShareUseBasicButtons` - Enable 'Basic buttons' Mode? (See #2 in the "Configuration" section; conflicts with $wgShareUsePlainLinks)
 
-`$wgShareSidebarLinksOnly` - Enable 'Plain links' Mode? (See #3 in the "Configuration" section; conflicts with $wgShareSidebarImagesOnly)
+`$wgShareUsePlainLinks` - Enable 'Plain links' Mode? (See #3 in the "Configuration" section; conflicts with $wgShareUseBasicButtons)
 
 If the last two configuration variables are enabled, they will cancel each other out and cause the sidebar portlet to not appear.
