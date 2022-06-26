@@ -21,5 +21,6 @@
 	"share-tumblr-desc": "Allow for a link to share articles via Tumblr to be added to the sidebar",
 	"share-twitter": "Share to Twitter",
 	"share-twitter-desc": "Allow for a link to share articles via Twitter to be added to the sidebar",
-	"share-preftoggle": "Disable display of share links in the sidebar?"
+	"share-preftoggle": "Disable display of share links in the sidebar?",
+	"right-viewsharelinks": "View sidebar share portlet"
 }
