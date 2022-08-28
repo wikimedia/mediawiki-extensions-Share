@@ -80,7 +80,7 @@
 	},
 	"Hooks": {
 		"GetPreferences": "ShareHooks::onGetPreferences",
-		"SkinBuildSidebar": "ShareHooks::onSkinBuildSidebar"
+		"SidebarBeforeOutput": "ShareHooks::onSidebarBeforeOutput"
 	},
 	"MessagesDirs": {
 		"Share": [
