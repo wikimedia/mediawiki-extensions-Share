@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Jaw Salvager",
 			"MathXplore",
 			"WikistoryMiraheze"
 		]
@@ -12,7 +13,7 @@
 	"share-email-desc": "emailで記事を共有するためのリンクがサイドバーに追加されます",
 	"share-facebook": "Facebookで共有する",
 	"share-facebook-desc": "Facebookで記事を共有するためのリンクがサイドバーに追加されます",
-	"share-linkedin": "Share to LinkedInで共有する",
+	"share-linkedin": "LinkedInで共有する",
 	"share-linkedin-desc": "LinkedInで記事を共有するためのリンクがサイドバーに追加されます",
 	"share-reddit": "Redditで共有する",
 	"share-reddit-desc": "Redditで記事を共有するためのリンクがサイドバーに追加されます",
