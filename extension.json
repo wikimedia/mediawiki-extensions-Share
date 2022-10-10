@@ -1,6 +1,6 @@
 {
 	"name": "Share",
-	"version": "1.0",
+	"version": "1.1",
 	"author": [
 		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]"
 	],
@@ -80,7 +80,7 @@
 	},
 	"Hooks": {
 		"GetPreferences": "ShareHooks::onGetPreferences",
-		"SkinBuildSidebar": "ShareHooks::onSkinBuildSidebar"
+		"SidebarBeforeOutput": "ShareHooks::onSidebarBeforeOutput"
 	},
 	"MessagesDirs": {
 		"Share": [
