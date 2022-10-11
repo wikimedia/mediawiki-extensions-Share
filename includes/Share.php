@@ -59,37 +59,37 @@ class ShareHooks {
 				if ( $wgShareUseBasicButtons && !$wgShareUsePlainLinks ) {
 					if ( $wgShareEmail ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' ).'" width="90" height="30"></a>',
+							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/email.png" alt="' . $skin->msg( 'share-email' ) . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareFacebook ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/facebook.png" alt="' . $skin->msg( 'share-facebook' ) . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/linkedin.png" alt="' . $skin->msg( 'share-linkedin' ) . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-redit' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/reddit.png" alt="' . $skin->msg( 'share-redit' ) . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/tumblr.png" alt="' . $skin->msg( 'share-tumblr' ) . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareTwitter ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ) . '"><img src="' . $wgExtensionAssetsPath . '/Share/resources/images/twitter.png" alt="' . $skin->msg( 'share-twitter' ) . '" width="90" height="30"></a>',
 						];
 					}
 				}

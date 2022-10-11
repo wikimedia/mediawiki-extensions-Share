@@ -21,5 +21,7 @@
 	"share-tumblr-desc": "i18n counterpart of message in extension.json",
 	"share-twitter": "Link name and alt value for 'Share to Twitter'",
 	"share-twitter-desc": "i18n counterpart of message in extension.json",
-	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences"
+	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences",
+	"right-viewsharelinks": "{{doc-right|viewsharelinks}}",
+	"action-viewsharelinks": "{{doc-action|viewsharelinks}}"
 }
