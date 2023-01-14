@@ -1,6 +1,6 @@
 {
 	"name": "Share",
-	"version": "1.0",
+	"version": "1.2",
 	"author": [
 		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]"
 	],
@@ -19,13 +19,13 @@
 	],
 	"config": {
 		"ShareEmail": {
-			"description": "Enable share via email link in the sidebar?",
+			"description": "Enable 'Share via email' link in the sidebar?",
 			"descriptionmsg": "share-email-desc",
 			"public": true,
 			"value": false
 		},
 		"ShareLinkedIn": {
-			"description": "Enable share to LinkedIn link in the sidebar?",
+			"description": "Enable 'Share to LinkedIn' link in the sidebar?",
 			"descriptionmsg": "share-linkedin-desc",
 			"public": true,
 			"value": false
@@ -36,20 +36,26 @@
 			"public": true,
 			"value": false
 		},
+		"ShareTelegram": {
+			"description": "Enable 'Share to Telegram' link in the sidebar?",
+			"descriptionmsg": "share-telegram-desc",
+			"public": true,
+			"value": false
+		},
 		"ShareTumblr": {
-			"description": "Enable share to Tumblr link in the sidebar?",
+			"description": "Enable 'Share to Tumblr' link in the sidebar?",
 			"descriptionmsg": "share-tumblr-desc",
 			"public": true,
 			"value": false
 		},
 		"ShareTwitter": {
-			"description": "Enable share to Twitter link in the sidebar?",
+			"description": "Enable 'Share to Twitter' link in the sidebar?",
 			"descriptionmsg": "share-twitter-desc",
 			"public": true,
 			"value": true
 		},
 		"ShareFacebook": {
-			"description": "Enable share to Facebook link in the sidebar?",
+			"description": "Enable 'Share to Facebook' link in the sidebar?",
 			"descriptionmsg": "share-facebook-desc",
 			"public": true,
 			"value": true
