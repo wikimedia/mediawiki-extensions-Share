@@ -98,9 +98,9 @@ class ShareHooks {
 				if ( !$wgShareUseBasicButtons && $wgShareUsePlainLinks ) {
 					if ( $wgShareFacebook ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-facebook' ),
+							'text' => wfMessage( 'share-facebook' )->plain(),
 							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-facebook' ),
+							'title' => wfMessage( 'share-facebook' )->plain(),
 							'id' => 'n-facebookshare',
 						];
 					}
