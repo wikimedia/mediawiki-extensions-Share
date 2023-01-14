@@ -59,37 +59,37 @@ class ShareHooks {
 				if ( $wgShareUseBasicButtons && !$wgShareUsePlainLinks ) {
 					if ( $wgShareEmail ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' ).'" width="90" height="30"></a>',
+							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/email.png" alt="'.wfMessage( 'share-email' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareFacebook ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.wfMessage( 'share-facebook' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.wfMessage( 'share-linkedin' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-redit' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-redit' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.wfMessage( 'share-tumblr' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $wgShareTwitter ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' ).'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.wfMessage( 'share-twitter' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 				}
@@ -98,54 +98,54 @@ class ShareHooks {
 				if ( !$wgShareUseBasicButtons && $wgShareUsePlainLinks ) {
 					if ( $wgShareFacebook ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-facebook' ),
+							'text' => wfMessage( 'share-facebook' ),
 							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-facebook' ),
+							'title' => wfMessage( 'share-facebook' ),
 							'id' => 'n-facebookshare',
 						];
 					}
 
 					if ( $wgShareTwitter ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-twitter' ),
+							'text' => wfMessage( 'share-twitter' )->plain(),
 							'href' => 'https://www.twitter.com/share?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-twitter' ),
+							'title' => wfMessage( 'share-twitter' )->plain(),
 							'id' => 'n-twittershare',
 						];
 					}
 
 					if ( $wgShareEmail ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-email' ),
+							'text' => wfMessage( 'share-email' )->plain(),
 							'href' => 'mailto:%20?body=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-email' ),
+							'title' => wfMessage( 'share-email' )->plain(),
 							'id' => 'n-emailshare',
 						];
 					}
 
 					if ( $wgShareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-linkedin' ),
+							'text' => wfMessage( 'share-linkedin' )->plain(),
 							'href' => 'https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-linkedin' ),
+							'title' => wfMessage( 'share-linkedin' )->plain(),
 							'id' => 'n-linkedinshare',
 						];
 					}
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-reddit' ),
+							'text' => wfMessage( 'share-reddit' )->plain(),
 							'href' => 'https://www.reddit.com/submit?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-reddit' ),
+							'title' => wfMessage( 'share-reddit' )->plain(),
 							'id' => 'n-redditshare',
 						];
 					}
 
 					if ( $wgShareTumblr ) {
 						$sidebar['share-header'][] = [
-							'text' => $skin->msg( 'share-tumblr' ),
+							'text' => wfMessage( 'share-tumblr' )->plain(),
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
-							'title' => $skin->msg( 'share-tumblr' ),
+							'title' => wfMessage( 'share-tumblr' )->plain(),
 							'id' => 'n-tumblrshare',
 						];
 					}
