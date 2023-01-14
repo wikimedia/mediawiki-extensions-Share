@@ -77,7 +77,7 @@ class ShareHooks {
 
 					if ( $wgShareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-redit' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$wgExtensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-reddit' )->plain().'" width="90" height="30"></a>',
 						];
 					}
 
