@@ -2,7 +2,8 @@
 	"name": "Share",
 	"version": "1.2",
 	"author": [
-		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]"
+		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]",
+		"Alex"
 	],
 	"url": "https://github.com/AgentIsai/Share",
 	"descriptionmsg": "share-desc",
