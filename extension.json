@@ -74,6 +74,9 @@
 			"value": true
 		}
 	},
+	"ConfigRegistry": {
+		"Share": "GlobalVarConfig::newInstance"
+	},
 	"DefaultUserOptions": {
 		"sharesidebar": 0
 	},
