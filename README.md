@@ -1,14 +1,16 @@
 # Share
 Add links/buttons to the sidebar to allow users to share your wiki's articles on Facebook, Twitter, LinkedIn, Tumblr, Reddit and via email.
 
-Written by Agent Isai, mainly for Miraheze
+Written by Agent Isai, mainly for Miraheze.
 
 Licensed under GPL 3.0 or later.
+
+For more information, see the extension's page at: [www.mediawiki.org/wiki/Extension:Share](https://www.mediawiki.org/wiki/Extension:Share).
 
 # Installation
 As with most MediaWiki installations, just simply clone this repository into your `extensions` folder:
 
-`git clone https://github.com/AgentIsai/Share`
+`git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Share`
 
 # Configuration
 Share adds various new configurations which allows you to select what platform sharing links you want in the sidebar and how you want the sidebar to look.

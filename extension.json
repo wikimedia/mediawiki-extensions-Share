@@ -4,7 +4,7 @@
 	"author": [
 		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]"
 	],
-	"url": "https://github.com/AgentIsai/Share",
+	"url": "https://www.mediawiki.org/wiki/Extension:Share",
 	"descriptionmsg": "share-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
