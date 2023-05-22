@@ -3,11 +3,12 @@
 		"authors": [
 			"Jaw Salvager",
 			"MathXplore",
+			"Shirayuki",
 			"WikistoryMiraheze"
 		]
 	},
 	"share": "共有",
-	"share-desc": "ユーザが簡単にウィキの記事をソーシャルメディアで共有できる、サイドバーのポートレットを追加する",
+	"share-desc": "利用者が簡単にウィキの記事をソーシャルメディアで共有できる、サイドバーのポートレットを追加する",
 	"share-header": "この記事を共有する",
 	"share-email": "メールで共有する",
 	"share-email-desc": "emailで記事を共有するためのリンクがサイドバーに追加されます",
