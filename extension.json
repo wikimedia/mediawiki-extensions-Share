@@ -1,11 +1,11 @@
 {
 	"name": "Share",
-	"version": "1.2",
+	"version": "2.0",
 	"author": [
 		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]",
 		"Alex"
 	],
-	"url": "https://github.com/AgentIsai/Share",
+	"url": "https://www.mediawiki.org/wiki/Extension:Share",
 	"descriptionmsg": "share-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
@@ -37,6 +37,12 @@
 			"public": true,
 			"value": false
 		},
+		"SharePinterest": {
+			"description": "Enable 'Share to Pinterest' link in the sidebar?",
+			"descriptionmsg": "share-pinterest-desc",
+			"public": true,
+			"value": fals
+		},
 		"ShareReddit": {
 			"description": "Enable share to Reddit link in the sidebar?",
 			"descriptionmsg": "share-reddit-desc",
@@ -65,19 +71,19 @@
 			"description": "Enable 'Share to VK' link in the sidebar?",
 			"descriptionmsg": "share-vk-desc",
 			"public": true,
-			"value": true
+			"value": false
 		},
 		"ShareWeibo": {
 			"description": "Enable 'Share to Weibo' link in the sidebar?",
 			"descriptionmsg": "share-weibo-desc",
 			"public": true,
-			"value": true
+			"value": false
 		},
 		"ShareWhatsApp": {
 			"description": "Enable 'Share to WhatsApp' link in the sidebar?",
-			"descriptionmsg": "share-weibo-desc",
+			"descriptionmsg": "share-whatsapp-desc",
 			"public": true,
-			"value": true
+			"value": false
 		},
 		"ShareUseBasicButtons": {
 			"description": "Use Basic Buttons (read README for more information)?",
