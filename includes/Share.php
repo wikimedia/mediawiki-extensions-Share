@@ -12,6 +12,7 @@ class ShareHooks {
 		$shareFacebook = $config->get( 'ShareFacebook' );
 		$shareLinkedin = $config->get( 'ShareLinkedIn' );
 		$shareReddit = $config->get( 'ShareReddit' );
+		$shareTelegram = $config->get( 'ShareTelegram' );
 		$shareTumblr = $config->get( 'ShareTumblr' );
 		$shareTwitter = $config->get( 'ShareTwitter' );
 		$shareVK = $config->get( 'ShareVK' );
@@ -69,37 +70,37 @@ class ShareHooks {
 				if ( $shareUseBasicButtons && !$shareUsePlainLinks ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.wfMessage( 'share-email' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareFacebook ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.wfMessage( 'share-facebook' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.wfMessage( 'share-linkedin' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.wfMessage( 'share-reddit' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareTumblr ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.wfMessage( 'share-tumblr' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareTwitter ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.wfMessage( 'share-twitter' )->plain().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 				}
@@ -108,81 +109,90 @@ class ShareHooks {
 				if ( !$shareUseBasicButtons && $shareUsePlainLinks ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-email' )->plain(),
+							'text' => $skin->msg( 'share-email' )->escaped(),
 							'href' => 'mailto:%20?body=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-email' )->plain(),
+							'title' => $skin->msg( 'share-email' )->escaped(),
 							'id' => 'n-emailshare',
 						];
 					}
 
 					if ( $shareFacebook ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-facebook' )->plain(),
+							'text' => $skin->msg( 'share-facebook' )->escaped(),
 							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-facebook' )->plain(),
+							'title' => $skin->msg( 'share-facebook' )->escaped(),
 							'id' => 'n-facebookshare',
 						];
 					}
 
 					if ( $shareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-linkedin' )->plain(),
+							'text' => $skin->msg( 'share-linkedin' )->escaped(),
 							'href' => 'https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-linkedin' )->plain(),
+							'title' => $skin->msg( 'share-linkedin' )->escaped(),
 							'id' => 'n-linkedinshare',
 						];
 					}
 
 					if ( $shareReddit ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-reddit' )->plain(),
+							'text' => $skin->msg( 'share-reddit' )->escaped(),
 							'href' => 'https://www.reddit.com/submit?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-reddit' )->plain(),
+							'title' => $skin->msg( 'share-reddit' )->escaped(),
 							'id' => 'n-redditshare',
+						];
+					}
+
+					if ( $shareTelegram ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-telegram' )->escaped(),
+							'href' => 'https://t.me/share/url?url=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-telegram' )->escaped(),
+							'id' => 'n-telegramshare',
 						];
 					}
 
 					if ( $shareTumblr ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-tumblr' )->plain(),
+							'text' => $skin->msg( 'share-tumblr' )->escaped(),
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-tumblr' )->plain(),
+							'title' => $skin->msg( 'share-tumblr' )->escaped(),
 							'id' => 'n-tumblrshare',
 						];
 					}
 
 					if ( $shareTwitter ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-twitter' )->plain(),
+							'text' => $skin->msg( 'share-twitter' )->escaped(),
 							'href' => 'https://www.twitter.com/share?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-twitter' )->plain(),
+							'title' => $skin->msg( 'share-twitter' )->escaped(),
 							'id' => 'n-twittershare',
 						];
 					}
 
 					if ( $shareVK ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-vk' )->plain(),
+							'text' => $skin->msg( 'share-vk' )->escaped(),
 							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-vk' )->plain(),
+							'title' => $skin->msg( 'share-vk' )->escaped(),
 							'id' => 'n-weiboshare',
 						];
 					}
 
 					if ( $shareWeibo ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-weibo' )->plain(),
+							'text' => $skin->msg( 'share-weibo' )->escaped(),
 							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-weibo' )->plain(),
+							'title' => $skin->msg( 'share-weibo' )->escaped(),
 							'id' => 'n-weiboshare',
 						];
 					}
 
 					if ( $shareWhatsApp ) {
 						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-whatsapp' )->plain(),
+							'text' => $skin->msg( 'share-whatsapp' )->escaped(),
 							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-whatsapp' )->plain(),
+							'title' => $skin->msg( 'share-whatsapp' )->escaped(),
 							'id' => 'n-whatsappshare',
 						];
 					}
