@@ -8,12 +8,15 @@ class ShareHooks {
 
 		$config = $services->getConfigFactory()->makeConfig( 'Share' );
 		$extensionAssetsPath = $config->get( 'ExtensionAssetsPath' );
-		$shareFacebook = $config->get( 'ShareFacebook' );
-		$shareTwitter = $config->get( 'ShareTwitter' );
-		$shareLinkedin = $config->get( 'ShareLinkedIn' );
-		$shareTumblr = $config->get( 'ShareTumblr' );
-		$shareReddit = $config->get( 'ShareReddit' );
 		$shareEmail = $config->get( 'ShareEmail' );
+		$shareFacebook = $config->get( 'ShareFacebook' );
+		$shareLinkedin = $config->get( 'ShareLinkedIn' );
+		$shareReddit = $config->get( 'ShareReddit' );
+		$shareTumblr = $config->get( 'ShareTumblr' );
+		$shareTwitter = $config->get( 'ShareTwitter' );
+		$shareVK = $config->get( 'ShareVK' );
+		$shareWeibo = $config->get( 'ShareWeibo' );
+		$shareWhatsApp = $config->get( 'ShareWhatsApp' );
 		$shareUseBasicButtons = $config->get( 'ShareUseBasicButtons' );
 		$shareUsePlainLinks = $config->get( 'ShareUsePlainLinks' );
 
@@ -103,30 +106,21 @@ class ShareHooks {
 
 				// 'Plain Sidebar Links' mode - Displays all "Share" buttons as plain sidebar links as if they were any other link in the sidebar
 				if ( !$shareUseBasicButtons && $shareUsePlainLinks ) {
-					if ( $shareFacebook ) {
-						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-facebook' )->plain(),
-							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-facebook' )->plain(),
-							'id' => 'n-facebookshare',
-						];
-					}
-
-					if ( $shareTwitter ) {
-						$sidebar['share-header'][] = [
-							'text' => wfMessage( 'share-twitter' )->plain(),
-							'href' => 'https://www.twitter.com/share?url=' . urlencode( $currenturl ),
-							'title' => wfMessage( 'share-twitter' )->plain(),
-							'id' => 'n-twittershare',
-						];
-					}
-
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
 							'text' => wfMessage( 'share-email' )->plain(),
 							'href' => 'mailto:%20?body=' . urlencode( $currenturl ),
 							'title' => wfMessage( 'share-email' )->plain(),
 							'id' => 'n-emailshare',
+						];
+					}
+
+					if ( $shareFacebook ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-facebook' )->plain(),
+							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-facebook' )->plain(),
+							'id' => 'n-facebookshare',
 						];
 					}
 
@@ -154,6 +148,42 @@ class ShareHooks {
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
 							'title' => wfMessage( 'share-tumblr' )->plain(),
 							'id' => 'n-tumblrshare',
+						];
+					}
+
+					if ( $shareTwitter ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-twitter' )->plain(),
+							'href' => 'https://www.twitter.com/share?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-twitter' )->plain(),
+							'id' => 'n-twittershare',
+						];
+					}
+
+					if ( $shareVK ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-vk' )->plain(),
+							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-vk' )->plain(),
+							'id' => 'n-weiboshare',
+						];
+					}
+
+					if ( $shareWeibo ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-weibo' )->plain(),
+							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-weibo' )->plain(),
+							'id' => 'n-weiboshare',
+						];
+					}
+
+					if ( $shareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'text' => wfMessage( 'share-whatsapp' )->plain(),
+							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
+							'title' => wfMessage( 'share-whatsapp' )->plain(),
+							'id' => 'n-whatsappshare',
 						];
 					}
 				}
