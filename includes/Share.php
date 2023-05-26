@@ -39,74 +39,8 @@ class ShareHooks {
 		if ( $permissionManager->userHasRight( $user, 'viewsharelinks' ) ) {
 			// If Share is disabled in the User preferences then don't show (Default is enabled)
 			if ( !$userOptionsLookup->getOption( $user, 'sharesidebar', 0 ) ) {
-				// 'Full' Mode - Displays buttons straight from each platform's social plugin library
-				if ( !$shareUseBasicButtons && !$shareUsePlainLinks ) {
-					if ( $shareFacebook ) {
-						$sidebar['share-header'][] = [
-							'html' => '<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2F' . urlencode( $currenturl ) . '&layout=button&size=small&width=67&height=20&appId" width="67" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>',
-						];
-					}
-
-					if ( $shareTwitter ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://twitter.com/share" class="twitter-share-button" rel="nofollow" data-dnt="true" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>',
-						];
-					}
-
-					if ( $shareLinkedIn ) {
-						$sidebar['share-header'][] = [
-							'html' => '<script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script> <script type="IN/Share" data-url="https://www.linkedin.com"></script>',
-						];
-					}
-
-					if ( $shareTumblr ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a class="tumblr-share-button" href="https://www.tumblr.com/share"></a><script id="tumblr-js" async src="https://assets.tumblr.com/share-button.js"></script>',
-						];
-					}
-				}
-
-				// 'Sidebar images' mode - Doesn't load the button from each platform's social plugin library but instead displays images saying "Share"
-				if ( $shareUseBasicButtons && !$shareUsePlainLinks ) {
-					if ( $shareEmail ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-
-					if ( $shareFacebook ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-
-					if ( $shareLinkedIn ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-
-					if ( $shareReddit ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-
-					if ( $shareTumblr ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-
-					if ( $shareTwitter ) {
-						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' )->escaped().'" width="90" height="30"></a>',
-						];
-					}
-				}
-
-				// 'Plain Sidebar Links' mode - Displays all "Share" buttons as plain sidebar links as if they were any other link in the sidebar
-				if ( !$shareUseBasicButtons && $shareUsePlainLinks ) {
+				// 'Plain Sidebar Links' mode (Default) - Displays all "Share" buttons as sidebar links
+				if ( !$shareUseBasicButtons ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
 							'text' => $skin->msg( 'share-email' )->escaped(),
@@ -194,6 +128,63 @@ class ShareHooks {
 							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-whatsapp' )->escaped(),
 							'id' => 'n-whatsappshare',
+						];
+					}
+				}
+
+				// 'Sidebar images' mode - Display images saying "Share" instead of plain sidebar links
+				if ( $shareUseBasicButtons && !$shareUsePlainLinks ) {
+					if ( $shareEmail ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareFacebook ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareLinkedIn ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareReddit ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareTumblr ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareTwitter ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareVK ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://vk.com/share.php?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/vk.png" alt="'.$skin->msg( 'share-vk' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareWeibo ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/weibo.png" alt="'.$skin->msg( 'share-weibo' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $shareWhatsApp ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://wa.me/?text=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/whatsapp.png" alt="'.$skin->msg( 'share-whatsapp' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 				}
