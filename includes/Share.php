@@ -174,6 +174,12 @@ class ShareHooks {
 						];
 					}
 
+					if ( $shareTelegram ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.$skin->msg( 'share-telegram' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
 					if ( $shareTumblr ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' )->escaped().'" width="90" height="30"></a>',
