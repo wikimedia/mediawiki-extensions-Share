@@ -25,6 +25,12 @@
 			"public": true,
 			"value": false
 		},
+		"ShareFacebook": {
+			"description": "Enable 'Share to Facebook' link in the sidebar?",
+			"descriptionmsg": "share-facebook-desc",
+			"public": true,
+			"value": true
+		},
 		"ShareLinkedIn": {
 			"description": "Enable 'Share to LinkedIn' link in the sidebar?",
 			"descriptionmsg": "share-linkedin-desc",
@@ -55,9 +61,21 @@
 			"public": true,
 			"value": true
 		},
-		"ShareFacebook": {
-			"description": "Enable 'Share to Facebook' link in the sidebar?",
-			"descriptionmsg": "share-facebook-desc",
+		"ShareVK": {
+			"description": "Enable 'Share to VK' link in the sidebar?",
+			"descriptionmsg": "share-vk-desc",
+			"public": true,
+			"value": true
+		},
+		"ShareWeibo": {
+			"description": "Enable 'Share to Weibo' link in the sidebar?",
+			"descriptionmsg": "share-weibo-desc",
+			"public": true,
+			"value": true
+		},
+		"ShareWhatsApp": {
+			"description": "Enable 'Share to WhatsApp' link in the sidebar?",
+			"descriptionmsg": "share-weibo-desc",
 			"public": true,
 			"value": true
 		},
