@@ -11,6 +11,7 @@ class ShareHooks {
 		$shareEmail = $config->get( 'ShareEmail' );
 		$shareFacebook = $config->get( 'ShareFacebook' );
 		$shareLinkedin = $config->get( 'ShareLinkedIn' );
+		$sharePinterest = $config->get( 'SharePinterest' );
 		$shareReddit = $config->get( 'ShareReddit' );
 		$shareTelegram = $config->get( 'ShareTelegram' );
 		$shareTumblr = $config->get( 'ShareTumblr' );
@@ -46,7 +47,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-email' )->escaped(),
 							'href' => 'mailto:%20?body=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-email' )->escaped(),
-							'id' => 'n-emailshare',
+							'id' => 'n-share-email',
 						];
 					}
 
@@ -55,7 +56,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-facebook' )->escaped(),
 							'href' => 'https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-facebook' )->escaped(),
-							'id' => 'n-facebookshare',
+							'id' => 'n-share-facebook',
 						];
 					}
 
@@ -64,7 +65,16 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-linkedin' )->escaped(),
 							'href' => 'https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-linkedin' )->escaped(),
-							'id' => 'n-linkedinshare',
+							'id' => 'n-share-linkedin',
+						];
+					}
+
+					if ( $sharePinterest ) {
+						$sidebar['share-header'][] = [
+							'text' => $skin->msg( 'share-pinterest' )->escaped(),
+							'href' => 'https://www.pinterest.com/pin/create/button/?url=' . urlencode( $currenturl ),
+							'title' => $skin->msg( 'share-pinterest' )->escaped(),
+							'id' => 'n-share-pinterest',
 						];
 					}
 
@@ -73,7 +83,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-reddit' )->escaped(),
 							'href' => 'https://www.reddit.com/submit?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-reddit' )->escaped(),
-							'id' => 'n-redditshare',
+							'id' => 'n-share-reddit',
 						];
 					}
 
@@ -82,7 +92,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-telegram' )->escaped(),
 							'href' => 'https://t.me/share/url?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-telegram' )->escaped(),
-							'id' => 'n-telegramshare',
+							'id' => 'n-share-telegram',
 						];
 					}
 
@@ -91,7 +101,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-tumblr' )->escaped(),
 							'href' => 'https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-tumblr' )->escaped(),
-							'id' => 'n-tumblrshare',
+							'id' => 'n-share-tumblr',
 						];
 					}
 
@@ -100,7 +110,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-twitter' )->escaped(),
 							'href' => 'https://www.twitter.com/share?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-twitter' )->escaped(),
-							'id' => 'n-twittershare',
+							'id' => 'n-share-twitter',
 						];
 					}
 
@@ -109,7 +119,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-vk' )->escaped(),
 							'href' => 'https://vk.com/share.php?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-vk' )->escaped(),
-							'id' => 'n-weiboshare',
+							'id' => 'n-share-vk',
 						];
 					}
 
@@ -118,7 +128,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-weibo' )->escaped(),
 							'href' => 'https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-weibo' )->escaped(),
-							'id' => 'n-weiboshare',
+							'id' => 'n-share-weibo',
 						];
 					}
 
@@ -127,7 +137,7 @@ class ShareHooks {
 							'text' => $skin->msg( 'share-whatsapp' )->escaped(),
 							'href' => 'https://wa.me/?text=' . urlencode( $currenturl ),
 							'title' => $skin->msg( 'share-whatsapp' )->escaped(),
-							'id' => 'n-whatsappshare',
+							'id' => 'n-share-whatsapp',
 						];
 					}
 				}
@@ -149,6 +159,12 @@ class ShareHooks {
 					if ( $shareLinkedIn ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' )->escaped().'" width="90" height="30"></a>',
+						];
+					}
+
+					if ( $sharePinterest ) {
+						$sidebar['share-header'][] = [
+							'html' => '<a href="https://www.pinterest.com/pin/create/button/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/pinterest.png" alt="'.$skin->msg( 'share-pinterest' )->escaped().'" width="90" height="30"></a>',
 						];
 					}
 
