@@ -85,17 +85,11 @@
 			"public": true,
 			"value": false
 		},
-		"ShareUseBasicButtons": {
-			"description": "Use Basic Buttons (read README for more information)?",
+		"ShareUseButtons": {
+			"description": "Use sidebar buttons instead of sidebar links?",
 			"descriptionmsg": "share-sidebar-basicbuttons",
 			"public": true,
 			"value": false
-		},
-		"ShareUsePlainLinks": {
-			"description": "Use only plain links in the sidebar?",
-			"descriptionmsg": "share-sidebar-plainlinks",
-			"public": true,
-			"value": true
 		}
 	},
 	"ConfigRegistry": {
