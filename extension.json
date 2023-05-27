@@ -13,7 +13,7 @@
 		"MediaWiki": ">= 1.38.0"
 	},
 	"AutoloadClasses": {
-		"ShareHooks": "includes/Share.php"
+		"ShareHooks": "includes/ShareHooks.php"
 	},
 	"AvailableRights": [
 		"viewsharelinks"
