@@ -16,7 +16,7 @@ Share inserts links or buttons on the sidebar of wiki pages which allows users t
 # Installation
 As with most MediaWiki installations, just simply clone this repository into your `extensions` folder:
 
-`git clone https://gerrit.wikimedia.org/r/mediawiki/extensions`
+`git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/Share`
 
 # Configuration
 Share allows wiki administrators to configure the look of their sidebar share links/buttons and select what platforms you do or do not want to show up on your sidebar.
