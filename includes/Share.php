@@ -145,67 +145,67 @@ class ShareHooks {
 				if ( $shareUseButtons ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/email.png" alt="' . $skin->msg( 'share-email' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareFacebook ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/facebook.png" alt="'.$skin->msg( 'share-facebook' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.facebook.com/sharer/sharer.php?u=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/facebook.png" alt="' . $skin->msg( 'share-facebook' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareLinkedIn ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/linkedin.png" alt="'.$skin->msg( 'share-linkedin' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/linkedin.png" alt="' . $skin->msg( 'share-linkedin' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $sharePinterest ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.pinterest.com/pin/create/button/?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/pinterest.png" alt="'.$skin->msg( 'share-pinterest' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.pinterest.com/pin/create/button/?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/pinterest.png" alt="' . $skin->msg( 'share-pinterest' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareReddit ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/reddit.png" alt="'.$skin->msg( 'share-reddit' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.reddit.com/submit?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/reddit.png" alt="' . $skin->msg( 'share-reddit' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareTelegram ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/telegram.png" alt="'.$skin->msg( 'share-telegram' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://t.me/share/url?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/telegram.png" alt="' . $skin->msg( 'share-telegram' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareTumblr ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/tumblr.png" alt="'.$skin->msg( 'share-tumblr' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.tumblr.com/share/link?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/tumblr.png" alt="' . $skin->msg( 'share-tumblr' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareTwitter ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/twitter.png" alt="'.$skin->msg( 'share-twitter' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://www.twitter.com/share?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/twitter.png" alt="' . $skin->msg( 'share-twitter' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareVK ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://vk.com/share.php?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/vk.png" alt="'.$skin->msg( 'share-vk' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://vk.com/share.php?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/vk.png" alt="' . $skin->msg( 'share-vk' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareWeibo ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/weibo.png" alt="'.$skin->msg( 'share-weibo' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://service.weibo.com/share/share.php?url=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/weibo.png" alt="' . $skin->msg( 'share-weibo' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 
 					if ( $shareWhatsApp ) {
 						$sidebar['share-header'][] = [
-							'html' => '<a href="https://wa.me/?text=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/whatsapp.png" alt="'.$skin->msg( 'share-whatsapp' )->escaped().'" width="90" height="30"></a>',
+							'html' => '<a href="https://wa.me/?text=' . urlencode( $currenturl ) . '"><img src="' . $extensionAssetsPath . '/Share/resources/images/whatsapp.png" alt="' . $skin->msg( 'share-whatsapp' )->escaped() . '" width="90" height="30"></a>',
 						];
 					}
 				}
