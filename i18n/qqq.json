@@ -20,7 +20,6 @@
 	"share-telegram": "Link name and alt value for 'Share via Telegram'",
 	"share-telegram-desc": "i18n counterpart of message in extension.json",
 	"share-sidebar-basicbuttons": "i18n counterpart of message in extension.json",
-	"share-sidebar-plainlinks": "i18n counterpart of message in extension.json",
 	"share-tumblr": "Link name and alt value for 'Share to Tumblr'",
 	"share-tumblr-desc": "i18n counterpart of message in extension.json",
 	"share-twitter": "Link name and alt value for 'Share to Twitter'",
@@ -31,5 +30,7 @@
 	"share-weibo-desc": "i18n counterpart of message in extension.json",
 	"share-whatsapp": "Link name and alt value for 'Share via WhatsApp'",
 	"share-whatsapp-desc": "i18n counterpart of message in extension.json",
-	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences"
+	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences",
+	"right-viewsharelinks": "{{doc-right|viewsharelinks}}",
+	"action-viewsharelinks": "{{doc-action|viewsharelinks}}"
 }
