@@ -19,7 +19,7 @@ class ShareHooks {
 		$shareVK = $config->get( 'ShareVK' );
 		$shareWeibo = $config->get( 'ShareWeibo' );
 		$shareWhatsApp = $config->get( 'ShareWhatsApp' );
-		$shareUseBasicButtons = $config->get( 'ShareUseBasicButtons' );
+		$shareUseButtons = $config->get( 'ShareUseButtons' );
 
 		// Get title
 		$query = $skin->getRequest()->getQueryValues();
@@ -40,7 +40,7 @@ class ShareHooks {
 			// If Share is disabled in the User preferences then don't show (Default is enabled)
 			if ( !$userOptionsLookup->getOption( $user, 'sharesidebar', 0 ) ) {
 				// 'Plain Sidebar Links' mode (Default) - Displays all "Share" buttons as sidebar links
-				if ( !$shareUseBasicButtons ) {
+				if ( !$shareUseButtons ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
 							'text' => $skin->msg( 'share-email' )->escaped(),
@@ -142,7 +142,7 @@ class ShareHooks {
 				}
 
 				// 'Sidebar images' mode - Display images saying "Share" instead of plain sidebar links
-				if ( $shareUseBasicButtons ) {
+				if ( $shareUseButtons ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
