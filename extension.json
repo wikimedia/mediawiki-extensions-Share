@@ -41,7 +41,7 @@
 			"description": "Enable 'Share to Pinterest' link in the sidebar?",
 			"descriptionmsg": "share-pinterest-desc",
 			"public": true,
-			"value": fals
+			"value": false
 		},
 		"ShareReddit": {
 			"description": "Enable share to Reddit link in the sidebar?",
