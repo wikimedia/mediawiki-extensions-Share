@@ -1,11 +1,11 @@
 {
 	"name": "Share",
-	"version": "1.2",
+	"version": "2.0",
 	"author": [
 		"[https://meta.miraheze.org/wiki/User:Agent_Isai Agent Isai]",
 		"Alex"
 	],
-	"url": "https://github.com/AgentIsai/Share",
+	"url": "https://www.mediawiki.org/wiki/Extension:Share",
 	"descriptionmsg": "share-desc",
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
@@ -25,9 +25,21 @@
 			"public": true,
 			"value": false
 		},
+		"ShareFacebook": {
+			"description": "Enable 'Share to Facebook' link in the sidebar?",
+			"descriptionmsg": "share-facebook-desc",
+			"public": true,
+			"value": true
+		},
 		"ShareLinkedIn": {
 			"description": "Enable 'Share to LinkedIn' link in the sidebar?",
 			"descriptionmsg": "share-linkedin-desc",
+			"public": true,
+			"value": false
+		},
+		"SharePinterest": {
+			"description": "Enable 'Share to Pinterest' link in the sidebar?",
+			"descriptionmsg": "share-pinterest-desc",
 			"public": true,
 			"value": false
 		},
@@ -55,23 +67,29 @@
 			"public": true,
 			"value": true
 		},
-		"ShareFacebook": {
-			"description": "Enable 'Share to Facebook' link in the sidebar?",
-			"descriptionmsg": "share-facebook-desc",
-			"public": true,
-			"value": true
-		},
-		"ShareUseBasicButtons": {
-			"description": "Use Basic Buttons (read README for more information)?",
-			"descriptionmsg": "share-sidebar-basicbuttons",
+		"ShareVK": {
+			"description": "Enable 'Share to VK' link in the sidebar?",
+			"descriptionmsg": "share-vk-desc",
 			"public": true,
 			"value": false
 		},
-		"ShareUsePlainLinks": {
-			"description": "Use only plain links in the sidebar?",
-			"descriptionmsg": "share-sidebar-plainlinks",
+		"ShareWeibo": {
+			"description": "Enable 'Share to Weibo' link in the sidebar?",
+			"descriptionmsg": "share-weibo-desc",
 			"public": true,
-			"value": true
+			"value": false
+		},
+		"ShareWhatsApp": {
+			"description": "Enable 'Share to WhatsApp' link in the sidebar?",
+			"descriptionmsg": "share-whatsapp-desc",
+			"public": true,
+			"value": false
+		},
+		"ShareUseButtons": {
+			"description": "Use sidebar buttons instead of sidebar links?",
+			"descriptionmsg": "share-sidebar-basicbuttons",
+			"public": true,
+			"value": false
 		}
 	},
 	"ConfigRegistry": {
