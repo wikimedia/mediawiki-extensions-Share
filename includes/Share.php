@@ -20,7 +20,6 @@ class ShareHooks {
 		$shareWeibo = $config->get( 'ShareWeibo' );
 		$shareWhatsApp = $config->get( 'ShareWhatsApp' );
 		$shareUseBasicButtons = $config->get( 'ShareUseBasicButtons' );
-		$shareUsePlainLinks = $config->get( 'ShareUsePlainLinks' );
 
 		// Get title
 		$query = $skin->getRequest()->getQueryValues();
@@ -143,7 +142,7 @@ class ShareHooks {
 				}
 
 				// 'Sidebar images' mode - Display images saying "Share" instead of plain sidebar links
-				if ( $shareUseBasicButtons && !$shareUsePlainLinks ) {
+				if ( $shareUseBasicButtons ) {
 					if ( $shareEmail ) {
 						$sidebar['share-header'][] = [
 							'html' => '<a href="mailto:%20?body=' . urlencode( $currenturl ).'"><img src="'.$extensionAssetsPath.'/Share/resources/images/email.png" alt="'.$skin->msg( 'share-email' )->escaped().'" width="90" height="30"></a>',
