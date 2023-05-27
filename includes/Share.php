@@ -10,7 +10,7 @@ class ShareHooks {
 		$extensionAssetsPath = $config->get( 'ExtensionAssetsPath' );
 		$shareEmail = $config->get( 'ShareEmail' );
 		$shareFacebook = $config->get( 'ShareFacebook' );
-		$shareLinkedin = $config->get( 'ShareLinkedIn' );
+		$shareLinkedIn = $config->get( 'ShareLinkedIn' );
 		$sharePinterest = $config->get( 'SharePinterest' );
 		$shareReddit = $config->get( 'ShareReddit' );
 		$shareTelegram = $config->get( 'ShareTelegram' );
