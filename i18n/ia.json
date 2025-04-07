@@ -10,9 +10,15 @@
 	"share-email": "Condivider per e-mail",
 	"share-facebook": "Condivider sur Facebook",
 	"share-linkedin": "Condivider sur LinkedIn",
+	"share-pinterest": "Condivider sur Pinterest",
 	"share-reddit": "Condivider sur Reddit",
+	"share-telegram": "Condivider sur Telegram",
 	"share-tumblr": "Condivider sur Tumblr",
 	"share-twitter": "Condivider sur Twitter",
+	"share-vk": "Condivider sur VK",
+	"share-weibo": "Condivider sur Weibo",
+	"share-whatsapp": "Condivider sur WhatsApp",
 	"share-preftoggle": "Disactivar le ligamines pro condivider in le barra lateral?",
-	"right-viewsharelinks": "Vider le ''portlet'' de condivider in le barra lateral"
+	"right-viewsharelinks": "Vider le ''portlet'' de condivider in le barra lateral",
+	"action-viewsharelinks": "vider le ''portlet'' de condivider in le barra lateral"
 }

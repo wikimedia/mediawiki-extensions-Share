@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"JLTRY",
 			"Verdy p"
 		]
 	},
@@ -10,9 +11,15 @@
 	"share-email": "Partager par courriel",
 	"share-facebook": "Partager sur Facebook",
 	"share-linkedin": "Partager sur LinkedIn",
+	"share-pinterest": "Partager sur Pinterest",
 	"share-reddit": "Partager sur Reddit",
+	"share-telegram": "Partager sur Telegram",
 	"share-tumblr": "Partager sur Tumblr",
 	"share-twitter": "Partager sur Twitter",
+	"share-vk": "Partager sur VK",
+	"share-weibo": "Partager sur Weibo",
+	"share-whatsapp": "Partager sur WhatsApp",
 	"share-preftoggle": "Désactiver l’affichage des liens de partage dans la barre latérale ?",
-	"right-viewsharelinks": "Afficher la section de partage de liens dans la barre latérale"
+	"right-viewsharelinks": "Afficher la section de partage de liens dans la barre latérale",
+	"action-viewsharelinks": "Afficher la section de partage de liens dans la barre latérale"
 }

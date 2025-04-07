@@ -12,9 +12,15 @@
 	"share-email": "שיתוף באמצעות דואר אלקטרוני",
 	"share-facebook": "לשתף לפייסבוק",
 	"share-linkedin": "לשתף ב־LinkedIn",
+	"share-pinterest": "שיתוף לפינטרסט",
 	"share-reddit": "לשתף ברדיט",
+	"share-telegram": "שיתוף לטלגרם",
 	"share-tumblr": "לשתף ב־Tumblr",
 	"share-twitter": "לשתף לטוויטר",
+	"share-vk": "שיתוף ל־VK",
+	"share-weibo": "שיתוף לווייבו",
+	"share-whatsapp": "שיתוף לווטסאפ",
 	"share-preftoggle": "לכבות את הצגת קישורי השיתוף בסרגל הצד?",
-	"right-viewsharelinks": "הצגת תיבת שיתוף בסרגל הצד"
+	"right-viewsharelinks": "הצגת תיבת שיתוף בסרגל הצד",
+	"action-viewsharelinks": "להציג תיבת שיתוף בסרגל הצד"
 }
