@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"share": "分享",
+	"share-desc": "添加一個側邊欄 portlet，來讓使用者在社交媒體平台上能輕鬆分享 wiki 條目",
+	"share-header": "分享這個",
+	"share-email": "透過電子郵件分享",
+	"share-facebook": "分享到 Facebook",
+	"share-linkedin": "分享到 LinkedIn",
+	"share-reddit": "分享到 Reddit",
+	"share-tumblr": "分享到 Tumblr",
+	"share-twitter": "分享到 Twitter",
+	"share-preftoggle": "停用在側邊欄裡顯示分享連結？",
+	"right-viewsharelinks": "查看側邊欄分享 portlet"
+}

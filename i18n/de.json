@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"share": "Teilen",
+	"share-desc": "Fügt ein Seitenleisten-Portlet hinzu, mit dem Benutzer Wiki-Artikel einfach auf Social-Media-Plattformen teilen können",
+	"share-header": "Teilen",
+	"share-email": "Per E-Mail teilen",
+	"share-facebook": "Auf Facebook teilen",
+	"share-linkedin": "Auf LinkedIn teilen",
+	"share-reddit": "Auf Reddit teilen",
+	"share-tumblr": "Auf Tumblr teilen",
+	"share-twitter": "Auf Twitter teilen",
+	"share-preftoggle": "Anzeige von Freigabelinks in der Seitenleiste deaktivieren?",
+	"right-viewsharelinks": "Portlet für die Seitenleistenfreigabe anzeigen"
+}

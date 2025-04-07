@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jaw Salvager",
+			"MathXplore",
+			"Shirayuki",
+			"WikistoryMiraheze"
+		]
+	},
+	"share": "共有",
+	"share-desc": "利用者が簡単にウィキの記事をソーシャルメディアで共有できる、サイドバーのポートレットを追加する",
+	"share-header": "この記事を共有する",
+	"share-email": "メールで共有する",
+	"share-facebook": "Facebookで共有する",
+	"share-linkedin": "LinkedInで共有する",
+	"share-reddit": "Redditで共有する",
+	"share-tumblr": "Tumblrで共有する",
+	"share-twitter": "Twitterで共有する",
+	"share-preftoggle": "サイドバーでの共有リンクの表示を無効にしますか？",
+	"right-viewsharelinks": "サイドバーの共有ポートレットを見る"
+}

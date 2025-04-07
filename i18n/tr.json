@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hedda"
+		]
+	},
+	"share": "Paylaş",
+	"share-desc": "Kullanıcıların wiki makalelerini sosyal medya platformlarında kolayca paylaşmasına olanak tanıyan bir kenar çubuğu portleti ekler",
+	"share-header": "Bunu paylaş",
+	"share-email": "E-posta ile paylaş",
+	"share-facebook": "Facebook'ta paylaş",
+	"share-linkedin": "LinkedIn'de paylaş",
+	"share-reddit": "Reddit'te paylaş",
+	"share-tumblr": "Tumblr'da paylaş",
+	"share-twitter": "Twitter'da paylaş",
+	"share-preftoggle": "Kenar çubuğunda paylaşım bağlantılarının görüntülenmesi devre dışı bırakılsın mı?",
+	"right-viewsharelinks": "Kenar çubuğu paylaşım portletini görüntüle"
+}

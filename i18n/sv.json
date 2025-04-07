@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sabelöga"
+		]
+	},
+	"share": "Dela",
+	"share-desc": "Lägger till en sidofältsportlet som gör det möjligt för användare att enkelt dela wikiartiklar på sociala medier",
+	"share-header": "Dela detta",
+	"share-email": "Dela via e-post",
+	"share-facebook": "Dela på Facebook",
+	"share-linkedin": "Dela på LinkedIn",
+	"share-reddit": "Dela på Reddit",
+	"share-tumblr": "Dela på Tumblr",
+	"share-twitter": "Dela på Twitter",
+	"share-preftoggle": "Inaktivera visning av dela-länkar i sidofältet?",
+	"right-viewsharelinks": "Visa sidofältets dela-portlet"
+}

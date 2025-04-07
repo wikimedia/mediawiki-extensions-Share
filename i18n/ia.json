@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"share": "Condivider",
+	"share-desc": "Adde un ''portlet'' al barra lateral que permitte al usatores facilemente condivider articulos wiki sur platteformas de medios social",
+	"share-header": "Condivider isto",
+	"share-email": "Condivider per e-mail",
+	"share-facebook": "Condivider sur Facebook",
+	"share-linkedin": "Condivider sur LinkedIn",
+	"share-reddit": "Condivider sur Reddit",
+	"share-tumblr": "Condivider sur Tumblr",
+	"share-twitter": "Condivider sur Twitter",
+	"share-preftoggle": "Disactivar le ligamines pro condivider in le barra lateral?",
+	"right-viewsharelinks": "Vider le ''portlet'' de condivider in le barra lateral"
+}

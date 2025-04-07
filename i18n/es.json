@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Agent"
+		]
+	},
+	"share": "Compartir",
+	"share-desc": "Agrega un portlet a la barra lateral que permite a los usuarios compartir fácilmente artículos wiki en plataformas de redes sociales",
+	"share-header": "Comparta esto",
+	"share-email": "Compartir por correo electrónico",
+	"share-facebook": "Compartir en Facebook",
+	"share-linkedin": "Compartir en LinkedIn",
+	"share-reddit": "Compartir en Reddit",
+	"share-tumblr": "Compartir en Tumblr",
+	"share-twitter": "Compartir en Twitter",
+	"share-preftoggle": "¿Deshabilitar la visualización de enlaces para compartir en la barra lateral?",
+	"right-viewsharelinks": "Ver el portlet de compartir de la barra lateral"
+}

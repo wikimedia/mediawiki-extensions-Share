@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"share": "Partilhar",
+	"share-desc": "Adiciona um ''portlet'' de barra lateral que permite que os utilizadores partilhem facilmente artigos wiki em plataformas de redes sociais",
+	"share-header": "Partilhar isto",
+	"share-email": "Partilhar por correio eletrónico",
+	"share-facebook": "Partilhar no Facebook",
+	"share-linkedin": "Partilhar no LinkedIn",
+	"share-reddit": "Partilhar no Reddit",
+	"share-tumblr": "Partilhar no Tumblr",
+	"share-twitter": "Partilhar no Twitter",
+	"share-preftoggle": "Desativar a apresentação de hiperligações de partilha na barra lateral?",
+	"right-viewsharelinks": "Ver ''portlet'' de partilha na barra lateral"
+}
