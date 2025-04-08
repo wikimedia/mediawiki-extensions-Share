@@ -15,14 +15,19 @@
 	"share-facebook-desc": "לאפשר להוסיף קישור לשיתוף ערכים לפייסבוק לסרגל הצד",
 	"share-linkedin": "לשתף ב־LinkedIn",
 	"share-linkedin-desc": "לאפשר להוסיף לסרגל הצד קישור לשיתוף ערכים ללינקדאין באמצעות דואר אלקטרוני",
+	"share-pinterest": "שיתוף לפינטרסט",
 	"share-reddit": "לשתף ברדיט",
 	"share-reddit-desc": "לאפשר להוסיף קישור לשיתוף ערכים לרדיט לסרגל הצד",
-	"share-sidebar-basicbuttons": "להשתמש במצב כפתורים בסיסיים?",
-	"share-sidebar-plainlinks": "להשתמש רק בקישורים פשוטים בסרגל הצד?",
+	"share-telegram": "שיתוף לטלגרם",
 	"share-tumblr": "לשתף ב־Tumblr",
 	"share-tumblr-desc": "לאפשר להוסיף קישור לשיתוף ערכים ל־Tumblr לסרגל הצד",
 	"share-twitter": "לשתף לטוויטר",
 	"share-twitter-desc": "לאפשר להוסיף קישור לשיתוף ערכים לטוויטר לסרגל הצד",
+	"share-vk": "שיתוף ל־VK",
+	"share-weibo": "שיתוף לווייבו",
+	"share-whatsapp": "שיתוף לווטסאפ",
+	"share-sidebar-basicbuttons": "להשתמש במצב כפתורים בסיסיים?",
 	"share-preftoggle": "לכבות את הצגת קישורי השיתוף בסרגל הצד?",
-	"right-viewsharelinks": "הצגת תיבת שיתוף בסרגל הצד"
+	"right-viewsharelinks": "הצגת תיבת שיתוף בסרגל הצד",
+	"action-viewsharelinks": "להציג תיבת שיתוף בסרגל הצד"
 }
