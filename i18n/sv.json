@@ -15,12 +15,11 @@
 	"share-linkedin-desc": "Tillåt att en länk för att dela artiklar via LinkedIn läggs till i sidofältet",
 	"share-reddit": "Dela på Reddit",
 	"share-reddit-desc": "Tillåt att en länk för att dela artiklar via Reddit läggs till i sidofältet",
-	"share-sidebar-basicbuttons": "Använda Basic Buttons Mode?",
-	"share-sidebar-plainlinks": "Bara använda vanliga länkar i sidofältet?",
 	"share-tumblr": "Dela på Tumblr",
 	"share-tumblr-desc": "Tillåt att en länk för att dela artiklar via Tumblr läggs till i sidofältet",
 	"share-twitter": "Dela på Twitter",
 	"share-twitter-desc": "Tillåt att en länk för att dela artiklar via Twitter läggs till i sidofältet",
+	"share-sidebar-basicbuttons": "Använda Basic Buttons Mode?",
 	"share-preftoggle": "Inaktivera visning av dela-länkar i sidofältet?",
 	"right-viewsharelinks": "Visa sidofältets dela-portlet"
 }
