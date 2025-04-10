@@ -4,8 +4,8 @@
 			"Agent Isai"
 		]
 	},
-	"share": "Name of the extension",
-	"share-desc": "Extension description",
+	"share": "{{name}}",
+	"share-desc": "{{desc|name=Share|url=https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:Share}}",
 	"share-header": "Header of sidebar portlet",
 	"share-email": "Link name and alt value for 'Share via email'",
 	"share-email-desc": "i18n counterpart of message in extension.json",
@@ -19,7 +19,6 @@
 	"share-reddit-desc": "i18n counterpart of message in extension.json",
 	"share-telegram": "Link name and alt value for 'Share via Telegram'",
 	"share-telegram-desc": "i18n counterpart of message in extension.json",
-	"share-sidebar-basicbuttons": "i18n counterpart of message in extension.json",
 	"share-tumblr": "Link name and alt value for 'Share to Tumblr'",
 	"share-tumblr-desc": "i18n counterpart of message in extension.json",
 	"share-twitter": "Link name and alt value for 'Share to Twitter'",
@@ -30,6 +29,7 @@
 	"share-weibo-desc": "i18n counterpart of message in extension.json",
 	"share-whatsapp": "Link name and alt value for 'Share via WhatsApp'",
 	"share-whatsapp-desc": "i18n counterpart of message in extension.json",
+	"share-sidebar-basicbuttons": "i18n counterpart of message in extension.json",
 	"share-preftoggle": "Toggle to allow users to enable or disable the sidebar portlet in their user preferences",
 	"right-viewsharelinks": "{{doc-right|viewsharelinks}}",
 	"action-viewsharelinks": "{{doc-action|viewsharelinks}}"

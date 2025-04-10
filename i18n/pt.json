@@ -15,12 +15,11 @@
 	"share-linkedin-desc": "Permitir que seja adicionada à barra lateral uma hiperligação para partilhar artigos por LinkedIn",
 	"share-reddit": "Partilhar no Reddit",
 	"share-reddit-desc": "Permitir que seja adicionada à barra lateral uma hiperligação para partilhar artigos por Reddit",
-	"share-sidebar-basicbuttons": "Usar o modo de botões simples?",
-	"share-sidebar-plainlinks": "Usar apenas hiperligações simples na barra lateral?",
 	"share-tumblr": "Partilhar no Tumblr",
 	"share-tumblr-desc": "Permitir que seja adicionada à barra lateral uma hiperligação para partilhar artigos por Tumblr",
 	"share-twitter": "Partilhar no Twitter",
 	"share-twitter-desc": "Permitir que seja adicionada à barra lateral uma hiperligação para partilhar artigos pelo Twitter",
+	"share-sidebar-basicbuttons": "Usar o modo de botões simples?",
 	"share-preftoggle": "Desativar a apresentação de hiperligações de partilha na barra lateral?",
 	"right-viewsharelinks": "Ver ''portlet'' de partilha na barra lateral"
 }

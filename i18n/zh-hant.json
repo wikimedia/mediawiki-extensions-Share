@@ -15,12 +15,11 @@
 	"share-linkedin-desc": "允許透過 LinkedIn 分享的條目連結添加到側邊欄",
 	"share-reddit": "分享到 Reddit",
 	"share-reddit-desc": "允許透過 Reddit 分享的條目連結添加到側邊欄",
-	"share-sidebar-basicbuttons": "使用基本按鈕模式？",
-	"share-sidebar-plainlinks": "在側邊欄中僅使用普通連結？",
 	"share-tumblr": "分享到 Tumblr",
 	"share-tumblr-desc": "允許透過 Tumblr 分享的條目連結添加到側邊欄",
 	"share-twitter": "分享到 Twitter",
 	"share-twitter-desc": "允許透過 Twitter 分享的條目連結添加到側邊欄",
+	"share-sidebar-basicbuttons": "使用基本按鈕模式？",
 	"share-preftoggle": "停用在側邊欄裡顯示分享連結？",
 	"right-viewsharelinks": "查看側邊欄分享 portlet"
 }
