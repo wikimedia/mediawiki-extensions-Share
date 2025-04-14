@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rail"
+		]
+	},
+	"share": "Udostępnij",
+	"share-desc": "Dodaje z boku strony sekcję umożiwiającą użytkownikom proste udostępnianie artykułów z wiki w mediach społecznościowych",
+	"share-header": "Udostępnij artykuł",
+	"share-email": "Udostępnij przez e-mail",
+	"share-facebook": "Udostępnij na Facebooku",
+	"share-linkedin": "Udostępnij na LinkedInie",
+	"share-reddit": "Udostępnij na Reddicie",
+	"share-tumblr": "Udostępnij na Tumblrze",
+	"share-twitter": "Udostępnij na Twitterze",
+	"share-preftoggle": "Wyłączyć wyświetlanie linków udostępniania w pasku bocznym?",
+	"right-viewsharelinks": "Wyświetlanie paska udostępniania"
+}

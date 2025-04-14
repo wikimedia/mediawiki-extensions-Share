@@ -1,0 +1,15 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"share": "공유",
+	"share-header": "이것을 공유합니다",
+	"share-email": "이메일을 통해 공유",
+	"share-facebook": "페이스북에 공유",
+	"share-linkedin": "링크드인에 공유",
+	"share-reddit": "레딧에 공유",
+	"share-tumblr": "텀블러에 공유",
+	"share-twitter": "트위터에 공유"
+}

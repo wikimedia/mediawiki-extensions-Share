@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"share": "Delen",
+	"share-desc": "Voegt aan de zijbalk een module toe waarmee gebruikers eenvoudig wiki-artikelen op sociale-mediaplatforms kunnen delen",
+	"share-header": "Dit delen",
+	"share-email": "Via e-mail delen",
+	"share-facebook": "Op Facebook delen",
+	"share-linkedin": "Op LinkedIn delen",
+	"share-reddit": "Op Reddit delen",
+	"share-tumblr": "Op Tumblr delen",
+	"share-twitter": "Op Twitter delen",
+	"share-preftoggle": "Weergave van koppelingen voor delen in de zijbalk uitschakelen?",
+	"right-viewsharelinks": "Module voor delen in zijbalk weergeven"
+}
