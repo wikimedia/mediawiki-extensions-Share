@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Lakejason0"
+			"Lakejason0",
+			"GuoPC"
 		]
 	},
 	"share": "分享",
@@ -13,13 +14,19 @@
 	"share-facebook-desc": "允许通过Facebook分享条目的链接添加到侧边栏",
 	"share-linkedin": "分享到LinkedIn",
 	"share-linkedin-desc": "允许通过LinkedIn分享条目的链接添加到侧边栏",
+	"share-pinterest": "分享到Pinterest",
 	"share-reddit": "分享到Reddit",
 	"share-reddit-desc": "允许通过Reddit分享条目的链接添加到侧边栏",
+	"share-telegram": "分享到Telegram",
 	"share-tumblr": "分享到Tumblr",
 	"share-tumblr-desc": "允许通过Tumblr分享条目的链接添加到侧边栏",
 	"share-twitter": "分享到Twitter",
 	"share-twitter-desc": "允许通过Twitter分享条目的链接添加到侧边栏",
+	"share-vk": "分享到VK",
+	"share-weibo": "分享到微博",
+	"share-whatsapp": "分享到WhatsApp",
 	"share-sidebar-basicbuttons": "使用基本按钮模式？",
 	"share-preftoggle": "禁用在侧边栏中显示分享链接？",
-	"right-viewsharelinks": "查看侧边栏共享portlet"
+	"right-viewsharelinks": "查看侧边栏共享portlet",
+	"action-viewsharelinks": "查看侧边栏分享portlet"
 }
