@@ -11,7 +11,7 @@
 	"license-name": "GPL-3.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.38.0"
+		"MediaWiki": ">= 1.41.0"
 	},
 	"AutoloadClasses": {
 		"ShareHooks": "includes/ShareHooks.php"
@@ -82,7 +82,7 @@
 		}
 	},
 	"ConfigRegistry": {
-		"Share": "GlobalVarConfig::newInstance"
+		"Share": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"DefaultUserOptions": {
 		"sharesidebar": 0
