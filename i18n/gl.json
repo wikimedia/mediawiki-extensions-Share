@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Toliño"
+		]
+	},
+	"share": "Compartir",
+	"share-desc": "Engade un trebello na barra lateral que permite aos usuarios compartir facilmente artigos wiki en plataformas de redes sociais",
+	"share-header": "Compartir isto",
+	"share-email": "Compartir por correo electrónico",
+	"share-facebook": "Compartir en Facebook",
+	"share-linkedin": "Compartir en LinkedIn",
+	"share-reddit": "Compartir en Reddit",
+	"share-tumblr": "Compartir en Tumblr",
+	"share-twitter": "Compartir en Twitter",
+	"share-preftoggle": "Queres desactivar a visualización das ligazóns para compartir na barra lateral?",
+	"right-viewsharelinks": "Ver o trebello para compartir na barra lateral"
+}
