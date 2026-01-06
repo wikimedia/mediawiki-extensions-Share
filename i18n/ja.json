@@ -24,5 +24,6 @@
 	"share-twitter-desc": "Twitterで記事を共有するためのリンクがサイドバーに追加されます",
 	"share-sidebar-basicbuttons": "基本ボタンモードを使いますか？",
 	"share-preftoggle": "サイドバーでの共有リンクの表示を無効にしますか？",
-	"right-viewsharelinks": "サイドバーの共有ポートレットを見る"
+	"right-viewsharelinks": "サイドバーの共有ポートレットを閲覧",
+	"action-viewsharelinks": "サイドバーの共有ポートレットの閲覧"
 }
