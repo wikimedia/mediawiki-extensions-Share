@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sabelöga"
+			"Sabelöga",
+			"Stefan2255"
 		]
 	},
 	"share": "Dela",
@@ -10,9 +11,15 @@
 	"share-email": "Dela via e-post",
 	"share-facebook": "Dela på Facebook",
 	"share-linkedin": "Dela på LinkedIn",
+	"share-pinterest": "Dela på Pinterest",
 	"share-reddit": "Dela på Reddit",
+	"share-telegram": "Dela på Telegram",
 	"share-tumblr": "Dela på Tumblr",
 	"share-twitter": "Dela på Twitter",
+	"share-vk": "Dela till VK",
+	"share-weibo": "Dela till Weibo",
+	"share-whatsapp": "Dela på WhatsApp",
 	"share-preftoggle": "Inaktivera visning av dela-länkar i sidofältet?",
-	"right-viewsharelinks": "Visa sidofältets dela-portlet"
+	"right-viewsharelinks": "Visa sidofältets dela-portlet",
+	"action-viewsharelinks": "Visa sidofältets dela-portlet"
 }
